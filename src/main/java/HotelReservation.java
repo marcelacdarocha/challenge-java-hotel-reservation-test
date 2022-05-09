@@ -1,5 +1,11 @@
+import application.HotelService;
+
 public class HotelReservation {
+
+    private final HotelService hotelService = new HotelService();
+
     public String getCheapestHotel (String input) {
-        return "Cheapest hotel name";
+
+        return hotelService.buscarHotelMaisBarato(input);
     }
 }
